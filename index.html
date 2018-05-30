@@ -1,0 +1,86 @@
+<html lang="es">
+  <head>
+    <meta charset="iso-8859-1">
+    <title>CARTAGRAFIA</title>
+    <link rel="stylesheet" href="estilos.css" type="text/css">
+    <script type="text/javascript" src="ajax.js"></script>
+    <script type="text/javascript">
+    	if(window.XMLHttpRequest)
+    	{
+    		// For modern browsers
+    		ajax = new XMLHttpRequest();
+    	}
+    	else
+    	{
+    		// For IE6 and IE5 browsers
+    		ajax = new ActiveXObject('Microsoft.XMLHTTP');
+    	}
+    </script>
+  </head>
+  <body>
+    <!-- INICIA -->
+    <div class="content">
+      <div class="top_block Titulo">
+        <div class="contentTitle">
+          CARTAGRAFÍA
+        </div>
+      </div>
+      <div class="carta">
+        Antes de comenzar esta carta, de la cual me arrepiento, le quería decir que me arrepiento de haberla querido, es más de haber sido su amigo.
+        6 De Febrero 2011 a las 4:30 am.
+        Daniela.
+        Desde que te conocí, hablando horas y horas por teléfono, casi todos los días, empecé a sentir algo por ti.
+        Algo que como te he dicho en anteriores ocasiones es algo que no sé qué es. No sé si sea amor o qué, no se si vaya mas allá del amor o qué.
+        Pero estoy seguro que no es lo que dice David "una simple traga", ni lo que dice Nathaly "es sólo un capricho".
+        Es lo que yo creo que es y lo que cree Luisa Y Felipe. Pero el caso, lo que pasó ayer es lo peor que te he podido hacer.
+        Eso de devolverte algo muy importante tanto para ti como para mi, pero estaba herido hasta el fondo y se que te herí muchisisisimo más de lo que yo estaba.
+        Y haberme tomado esa última copa fue lo peor que te he hecho y me he hecho. Pero tu eres mi vida.
+        Todo el mundo me dice olvidela que ella no le corresponde.
+        Pero no logro sacarte de mi cabeza y quiero que vuelvan los mejores días que he tenido contigo, los días del teléfono y de las dedicadas de canciones,
+        todavía me acuerdo de las primeras "Dime con quién andas". "You'll never walk alone" esas fueron las dos primeras. Ya me acuerdo de otra "si te sientes sola",
+        tu sabes que siempre que me necesites estaré a unos cuantos pasos y unas cuantas escaleras, o estaré en un celular, o en un fijo para cuando quieras.
+        Te acompañare a donde quieras. Espero que me perdones.
+      </div>
+      <div class="background Mapa">
+        <div style="width:600px">
+          <canvas id="glcanvas" width="800" height="600"></canvas>
+        </div>
+        <div id="uiContainer" class="zoom">
+          <div id="ui">
+            <div id="perspective"></div>
+          </div>
+          <span style="color:#000000;">Zoom</span>
+        </div>
+      </div>
+      <div>
+        <div class="contenedorTextoOrigen">
+          <div class="textoOrigen">
+            <label for="lenguaOrigen">Lenguaje origen:</label>
+            <select name="lenguaOrigen" id="lenguaOrigen" onchange="javascript:seleccionLenguajeOrigen(this)">
+              <option value="0">Seleccione...</option>
+            </select><br><br>
+            <span id="spanTextoOrigen"></span>
+          </div>
+        </div>
+        <div class="contenedorTextoDestino">
+          <div class="textoDestino">
+            <label for="lenguaDestino">Lenguaje destino:</label>
+            <select name="lenguaDestino" id="lenguaDestino"  onchange="javascript:seleccionLenguajeDestino(this)">
+              <option value="0">Seleccione...</option>
+            </select><br><br>
+            <span id="spanTextoDestino"></span>
+          </div>
+        </div>
+      </div>
+      <div class="bottom_block">
+        <div class="content">
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="gl-matrix.js"></script>
+  <script src="ui.js"></script>
+  <script src="objetos.js"></script>
+  <script src="datos/data.js"></script>
+  <script src="programa.js"></script>
+</html>
